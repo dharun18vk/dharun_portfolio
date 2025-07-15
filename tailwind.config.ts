@@ -66,6 +66,10 @@ export default {
 				'section-bg': 'hsl(var(--section-bg))',
 				'glass-bg': 'hsl(var(--glass-bg))'
 			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'primary': 'var(--shadow-primary)'
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
