@@ -96,8 +96,9 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            Energetic Full Stack Developer specializing in MERN stack and AI/ML applications. 
-            Building scalable web solutions and intelligent systems that solve real-world problems.
+            Energetic and detail-oriented Full Stack Developer with solid expertise in the MERN stack and AI/ML solutions. 
+            Skilled in delivering scalable backend services, interactive UI components, and real-time features. 
+            Passionate about innovation and continuous learning in tech.
           </motion.p>
 
           {/* CTA Buttons */}

@@ -7,35 +7,35 @@ export const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
-      title: 'Languages',
+      title: 'Languages & Web',
       skills: [
         { name: 'JavaScript', level: 90 },
         { name: 'Python', level: 85 },
-        { name: 'C++', level: 80 },
-        { name: 'C', level: 75 },
-        { name: 'SQL', level: 80 },
+        { name: 'HTML', level: 95 },
+        { name: 'CSS', level: 85 },
+        { name: 'Flask', level: 80 },
       ],
     },
     {
       icon: Palette,
       title: 'Frontend',
       skills: [
-        { name: 'React.js', level: 90 },
-        { name: 'HTML5', level: 95 },
-        { name: 'CSS3', level: 85 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'Bootstrap', level: 85 },
+        { name: 'React', level: 90 },
+        { name: 'Redux', level: 85 },
+        { name: 'Material UI', level: 80 },
+        { name: 'Tailwind', level: 90 },
+        { name: 'Chart.js', level: 75 },
       ],
     },
     {
       icon: Database,
-      title: 'Backend & Database',
+      title: 'Backend & Tools',
       skills: [
         { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 80 },
+        { name: 'Express', level: 80 },
         { name: 'MongoDB', level: 85 },
-        { name: 'Firebase', level: 80 },
-        { name: 'MySQL', level: 75 },
+        { name: 'Mongoose', level: 80 },
+        { name: 'REST APIs', level: 85 },
       ],
     },
     {
@@ -43,21 +43,21 @@ export const Skills = () => {
       title: 'AI/ML',
       skills: [
         { name: 'TensorFlow', level: 80 },
-        { name: 'scikit-learn', level: 85 },
-        { name: 'pandas', level: 80 },
-        { name: 'NumPy', level: 85 },
+        { name: 'Keras', level: 85 },
+        { name: 'OpenCV', level: 75 },
+        { name: 'Deep Learning', level: 80 },
         { name: 'NLP', level: 75 },
       ],
     },
     {
       icon: Wrench,
-      title: 'Tools',
+      title: 'Deployment & Tools',
       skills: [
-        { name: 'Git', level: 90 },
         { name: 'Docker', level: 70 },
-        { name: 'Postman', level: 85 },
-        { name: 'VS Code', level: 95 },
-        { name: 'Linux', level: 75 },
+        { name: 'Firebase', level: 80 },
+        { name: 'Netlify', level: 85 },
+        { name: 'Vercel', level: 80 },
+        { name: 'Heroku', level: 75 },
       ],
     },
   ];
@@ -163,18 +163,18 @@ export const Skills = () => {
               </h3>
               <div className="flex flex-wrap gap-2 justify-center">
                 {[
+                  'JWT Authentication',
+                  'Markdown Processing',
+                  'PDF Generation',
+                  'Real-time Features',
+                  'Deep Learning',
+                  'CNN & LSTM',
+                  'Image Processing',
+                  'Git & GitHub',
+                  'Postman',
+                  'Visual Studio Code',
                   'Problem Solving',
-                  'Team Leadership',
-                  'Agile Development',
-                  'System Design',
-                  'Code Review',
-                  'Testing & Debugging',
-                  'Performance Optimization',
-                  'API Design',
-                  'Cloud Computing',
-                  'DevOps',
-                  'Mobile Development',
-                  'UI/UX Design',
+                  'Team Collaboration',
                 ].map((skill) => (
                   <Badge
                     key={skill}

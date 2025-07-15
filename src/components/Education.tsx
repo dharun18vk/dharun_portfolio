@@ -6,48 +6,48 @@ import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
 export const Education = () => {
   const education = [
     {
-      degree: 'Bachelor of Engineering in Computer Science',
-      institution: 'Karpagam College of Engineering',
+      degree: 'B.Tech in Computer Science Engineering',
+      institution: 'KGiSL Institute of Technology',
       location: 'Coimbatore',
-      duration: '2021 - 2025',
-      grade: 'CGPA: 8.4 (as of 6th semester)',
-      description: 'Specializing in Computer Science and Engineering with focus on software development, algorithms, and artificial intelligence.',
+      duration: 'Aug 2022 – Jun 2026',
+      grade: 'In Progress',
+      description: 'Pursuing Bachelor of Technology in Computer Science Engineering with focus on software development, artificial intelligence, and modern web technologies.',
       achievements: [
-        'Consistent academic excellence',
-        'Top 10% of the class',
-        'Active participation in coding competitions',
-        'Research in AI/ML applications'
+        'Strong academic performance',
+        'Active in coding competitions',
+        'Research in AI/ML applications',
+        'Hands-on project development'
       ],
       status: 'In Progress',
       color: 'from-blue-500 to-purple-500'
     },
     {
-      degree: 'Higher Secondary Certificate (HSC)',
-      institution: 'Vidhya Niketan Matriculation Higher Secondary School',
-      location: 'Coimbatore',
-      duration: '2019 - 2021',
-      grade: '87%',
-      description: 'Completed 12th standard with Science stream, focusing on Mathematics, Physics, and Computer Science.',
+      degree: 'HSC (12th Grade)',
+      institution: 'Nalandha International Public School',
+      location: 'Hosur',
+      duration: 'Jan 2021 – May 2022',
+      grade: 'Completed',
+      description: 'Completed Higher Secondary Certificate with Science stream, focusing on Mathematics, Physics, and Computer Science.',
       achievements: [
-        'Excellent academic performance',
-        'Strong foundation in mathematics',
-        'Leadership roles in school activities',
-        'Computer Science topper'
+        'Excellent academic foundation',
+        'Strong in Mathematics and Science',
+        'Computer Science specialization',
+        'Leadership activities'
       ],
       status: 'Completed',
       color: 'from-green-500 to-teal-500'
     },
     {
-      degree: 'Secondary School Leaving Certificate (SSLC)',
-      institution: 'Vidhya Niketan Matriculation Higher Secondary School',
-      location: 'Coimbatore',
-      duration: '2018 - 2019',
-      grade: '92%',
-      description: 'Completed 10th standard with outstanding academic performance across all subjects.',
+      degree: 'SSLC (10th Grade)',
+      institution: 'Mathagondapalli Model School',
+      location: 'Hosur',
+      duration: 'Jan 2019 – May 2020',
+      grade: 'Completed',
+      description: 'Completed Secondary School Leaving Certificate with excellent academic performance across all subjects.',
       achievements: [
         'Outstanding academic performance',
         'All-rounder in academics',
-        'Excellent in Mathematics and Science',
+        'Strong Mathematics and Science foundation',
         'Active in extracurricular activities'
       ],
       status: 'Completed',
@@ -189,7 +189,7 @@ export const Education = () => {
                   </div>
                   <h4 className="font-semibold mb-2">Current Education</h4>
                   <p className="text-sm text-muted-foreground">
-                    B.E. Computer Science Engineering
+                    B.Tech Computer Science Engineering
                   </p>
                 </div>
                 
@@ -197,9 +197,9 @@ export const Education = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                     <Award className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="font-semibold mb-2">Current CGPA</h4>
+                  <h4 className="font-semibold mb-2">Institution</h4>
                   <p className="text-sm text-muted-foreground">
-                    8.4 out of 10.0
+                    KGiSL Institute of Technology
                   </p>
                 </div>
                 
@@ -209,7 +209,7 @@ export const Education = () => {
                   </div>
                   <h4 className="font-semibold mb-2">Expected Graduation</h4>
                   <p className="text-sm text-muted-foreground">
-                    2025
+                    2026
                   </p>
                 </div>
               </div>

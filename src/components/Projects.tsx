@@ -7,50 +7,49 @@ import { ExternalLink, Github, Award, Zap, Brain } from 'lucide-react';
 export const Projects = () => {
   const projects = [
     {
-      title: 'Voice-Enabled Task Assistant',
-      description: 'MERN-based assistant with NLP & speech recognition that automates notes, reminders, and basic commands. Features intelligent voice processing and natural language understanding.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'NLP', 'Speech Recognition', 'Express.js'],
-      achievement: 'Runner-up at AITM CodeFest 2023',
+      title: 'Student Consultation App',
+      description: 'Built comprehensive dashboards for students, consultants, teachers, and admins with real-time chat and secure consultation features. Enables seamless communication and consultation management.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'WebSocket', 'JWT'],
       icon: Brain,
       color: 'from-purple-500 to-pink-500',
       features: [
-        'Voice-to-text conversion',
-        'Natural language processing',
-        'Task automation',
-        'Smart reminders',
-        'Cross-platform support'
-      ],
-      status: 'Completed',
-      category: 'AI/ML'
-    },
-    {
-      title: 'Inventory Management System',
-      description: 'Real-time inventory web application built with React, Node.js, and MongoDB. Includes comprehensive billing system, product tracking, and automated stock alerts.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Chart.js', 'WebSocket'],
-      icon: Zap,
-      color: 'from-blue-500 to-cyan-500',
-      features: [
-        'Real-time inventory tracking',
-        'Automated billing system',
-        'Low stock alerts',
-        'Analytics dashboard',
-        'Multi-user support'
+        'Multi-role dashboards',
+        'Real-time chat system',
+        'Secure consultation features',
+        'User management',
+        'Notification system'
       ],
       status: 'Completed',
       category: 'Web Development'
     },
     {
-      title: 'AI-Powered Resume Screener',
-      description: 'Intelligent resume screening system using NLP to match resumes with job descriptions. Achieved 87% accuracy using scikit-learn and TF-IDF vectorization.',
-      technologies: ['Python', 'scikit-learn', 'NLP', 'TF-IDF', 'Flask', 'pandas'],
+      title: 'Anomaly Detection in Images using LLMs',
+      description: 'Intelligent image scanning tool using Large Language Models to detect anomalies efficiently with hybrid LLM + vision approach. Advanced AI-powered image analysis system.',
+      technologies: ['Python', 'LLMs', 'OpenCV', 'TensorFlow', 'Computer Vision', 'Deep Learning'],
+      icon: Zap,
+      color: 'from-blue-500 to-cyan-500',
+      features: [
+        'LLM-powered analysis',
+        'Hybrid vision approach',
+        'Efficient anomaly detection',
+        'Real-time processing',
+        'Advanced AI integration'
+      ],
+      status: 'Completed',
+      category: 'AI/ML'
+    },
+    {
+      title: 'Deep Learning Projects',
+      description: 'Implemented CNN and LSTM models for classification tasks using TensorFlow, OpenCV, and real-world datasets. Comprehensive deep learning solutions for various applications.',
+      technologies: ['Python', 'TensorFlow', 'CNN', 'LSTM', 'OpenCV', 'Keras'],
       icon: Award,
       color: 'from-green-500 to-emerald-500',
       features: [
-        '87% matching accuracy',
-        'TF-IDF vectorization',
-        'Automated scoring',
-        'Keyword extraction',
-        'Batch processing'
+        'CNN model implementation',
+        'LSTM for sequences',
+        'Real-world datasets',
+        'Classification tasks',
+        'Model optimization'
       ],
       status: 'Completed',
       category: 'AI/ML'
@@ -129,14 +128,6 @@ export const Projects = () => {
                         </Badge>
                       </div>
 
-                      {project.achievement && (
-                        <div className="flex items-center space-x-2 mb-4">
-                          <Award className="w-4 h-4 text-yellow-500" />
-                          <span className="text-sm font-medium text-yellow-600 dark:text-yellow-400">
-                            {project.achievement}
-                          </span>
-                        </div>
-                      )}
 
                       <p className="text-muted-foreground mb-6 leading-relaxed">
                         {project.description}

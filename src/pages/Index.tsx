@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
+import { Experience } from '@/components/Experience';
 import { Skills } from '@/components/Skills';
 import { Projects } from '@/components/Projects';
 import { Achievements } from '@/components/Achievements';
@@ -16,7 +17,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'achievements', 'education', 'contact'];
+      const sections = ['home', 'about', 'experience', 'skills', 'projects', 'achievements', 'education', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -65,6 +66,10 @@ const Index = () => {
           
           <section id="about">
             <About />
+          </section>
+          
+          <section id="experience">
+            <Experience />
           </section>
           
           <section id="skills">

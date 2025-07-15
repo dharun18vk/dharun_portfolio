@@ -7,54 +7,54 @@ export const Achievements = () => {
   const achievements = [
     {
       icon: Trophy,
-      title: 'Runner-up at AITM CodeFest 2023',
-      description: 'Secured second place in the prestigious AITM CodeFest competition with my Voice-Enabled Task Assistant project.',
-      category: 'Competition',
-      date: '2023',
+      title: 'Deep Fake Detection System',
+      description: 'Built a sophisticated forgery detector using CNN + OpenCV that achieved 92% accuracy with real-time webcam input. Advanced computer vision application.',
+      category: 'Technical',
+      date: '2024',
       color: 'from-yellow-500 to-orange-500',
       highlight: true
     },
     {
       icon: BookOpen,
-      title: 'Published ML Research Paper',
-      description: 'Published a research paper on resume shortlisting using machine learning techniques and natural language processing.',
-      category: 'Research',
+      title: 'Modular AI Assistant (Runner-up @ AITM Codefest)',
+      description: 'Voice-enabled MERN app with Natural Language Processing (NLP) that integrated task automation and intelligent voice command handling.',
+      category: 'Competition',
       date: '2023',
       color: 'from-blue-500 to-purple-500',
       highlight: true
     },
     {
       icon: Users,
-      title: 'AI/ML Bootcamp Mentor',
-      description: 'Conducted and mentored in local AI/ML bootcamps, helping students learn machine learning concepts and practical applications.',
-      category: 'Teaching',
-      date: '2022-2023',
+      title: 'Web Development Internship',
+      description: 'Successfully completed internship at Sangam Soft Tech Solution, developing full-stack blog platform with secure authentication and advanced features.',
+      category: 'Professional',
+      date: '2024',
       color: 'from-green-500 to-teal-500',
       highlight: false
     },
     {
       icon: Star,
       title: 'Academic Excellence',
-      description: 'Maintained a CGPA of 8.4 throughout my Computer Science Engineering program, consistently ranking in the top 10%.',
+      description: 'Maintaining excellent academic performance in B.Tech Computer Science Engineering program with consistent high grades and active participation.',
       category: 'Academic',
-      date: '2021-2025',
+      date: '2022-2026',
       color: 'from-purple-500 to-pink-500',
       highlight: false
     },
     {
       icon: Target,
-      title: '87% AI Model Accuracy',
-      description: 'Achieved 87% accuracy in resume screening model using scikit-learn and TF-IDF vectorization techniques.',
+      title: 'Advanced Deep Learning Projects',
+      description: 'Implemented multiple CNN and LSTM models for classification tasks using TensorFlow, OpenCV, and real-world datasets with high accuracy.',
       category: 'Technical',
-      date: '2023',
+      date: '2024',
       color: 'from-red-500 to-rose-500',
       highlight: false
     },
     {
       icon: Award,
-      title: 'Open Source Contributions',
-      description: 'Active contributor to open-source projects with focus on machine learning libraries and web development frameworks.',
-      category: 'Open Source',
+      title: 'AI/ML Innovation',
+      description: 'Developed innovative solutions including anomaly detection systems using LLMs and hybrid vision approaches for real-world applications.',
+      category: 'Innovation',
       date: 'Ongoing',
       color: 'from-indigo-500 to-blue-500',
       highlight: false
@@ -182,8 +182,8 @@ export const Achievements = () => {
                   <p className="text-sm text-muted-foreground">Students Mentored</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">8.4</div>
-                  <p className="text-sm text-muted-foreground">Current CGPA</p>
+                  <div className="text-4xl font-bold text-primary mb-2">92%</div>
+                  <p className="text-sm text-muted-foreground">Detection Accuracy</p>
                 </div>
               </div>
             </CardContent>

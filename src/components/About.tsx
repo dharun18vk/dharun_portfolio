@@ -35,10 +35,13 @@ export const About = () => {
                 Professional Summary
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                I am an energetic and detail-oriented Full Stack Developer with strong expertise in the MERN stack and AI/ML applications. I specialize in building scalable web solutions and intelligent systems that solve real-world problems.
+                Energetic and detail-oriented Full Stack Developer with solid expertise in the MERN stack and AI/ML solutions. 
+                Skilled in delivering scalable backend services, interactive UI components, and real-time features. 
+                Passionate about innovation and continuous learning in tech.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My passion lies in creating innovative solutions that bridge the gap between complex technical concepts and user-friendly applications. I enjoy tackling challenging problems and am always eager to learn new technologies.
+                My passion lies in creating innovative solutions that bridge the gap between complex technical concepts and user-friendly applications. 
+                I enjoy tackling challenging problems and am always eager to learn new technologies and contribute to impactful projects.
               </p>
             </div>
 
@@ -125,8 +128,8 @@ export const About = () => {
 
               <Card className="glass-card text-center hover-lift">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-2">87%</div>
-                  <p className="text-sm text-muted-foreground">AI Model Accuracy</p>
+                  <div className="text-3xl font-bold text-primary mb-2">92%</div>
+                  <p className="text-sm text-muted-foreground">Deep Fake Detection</p>
                 </CardContent>
               </Card>
             </div>
@@ -137,19 +140,19 @@ export const About = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Runner-up at AITM CodeFest 2023</span>
+                    <span className="text-sm text-muted-foreground">Deep Fake Detection System (92% accuracy)</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Published ML research paper</span>
+                    <span className="text-sm text-muted-foreground">Runner-up at AITM Codefest</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Conducted AI/ML bootcamps</span>
+                    <span className="text-sm text-muted-foreground">Web Development Internship</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">MERN Stack Expert</span>
+                    <span className="text-sm text-muted-foreground">AI/ML & Deep Learning Expert</span>
                   </div>
                 </div>
               </CardContent>
