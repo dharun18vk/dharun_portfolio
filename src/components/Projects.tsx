@@ -20,7 +20,8 @@ export const Projects = () => {
         'Notification system'
       ],
       status: 'Completed',
-      category: 'Web Development'
+      category: 'Web Development',
+      githubLink: 'https://github.com/dharun18vk/student-consultation-app'
     },
     {
       title: 'Anomaly Detection in Images using LLMs',
@@ -36,23 +37,24 @@ export const Projects = () => {
         'Advanced AI integration'
       ],
       status: 'Completed',
-      category: 'AI/ML'
+      category: 'AI/ML',
+      githubLink: 'https://github.com/dharun-kumar/anomaly-detection-llm'
     },
     {
-      title: 'Deep Learning Projects',
-      description: 'Implemented CNN and LSTM models for classification tasks using TensorFlow, OpenCV, and real-world datasets. Comprehensive deep learning solutions for various applications.',
-      technologies: ['Python', 'TensorFlow', 'CNN', 'LSTM', 'OpenCV', 'Keras'],
+      title: 'Modular AI Platform with Ollama',
+      description: 'Implemented Modular AI platform using ollama that can create and manage AI models effortlessly.Also includes different ollama models and purposes',
+      technologies: ['Python', 'TensorFlow','Mern Stack', 'Ollama', 'Keras'],
       icon: Award,
       color: 'from-green-500 to-emerald-500',
       features: [
-        'CNN model implementation',
-        'LSTM for sequences',
+        'Ollama model implementation',
         'Real-world datasets',
-        'Classification tasks',
+        'AI model management',
         'Model optimization'
       ],
       status: 'Completed',
-      category: 'AI/ML'
+      category: 'AI/ML',
+      githubLink: 'https://github.com/dharun18vk/ollama_chatbot'
     }
   ];
 
@@ -168,16 +170,10 @@ export const Projects = () => {
                           variant="outline"
                           size="sm"
                           className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                          onClick={() => window.open(project.githubLink, '_blank')}
                         >
                           <Github className="w-4 h-4 mr-2" />
                           View Code
-                        </Button>
-                        <Button
-                          size="sm"
-                          className="bg-primary hover:bg-primary/90"
-                        >
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Live Demo
                         </Button>
                       </div>
                     </div>
@@ -207,7 +203,7 @@ export const Projects = () => {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90"
-                onClick={() => window.open('https://github.com/dharun-kumar', '_blank')}
+                onClick={() => window.open('https://github.com/dharun18vk', '_blank')}
               >
                 <Github className="w-5 h-5 mr-2" />
                 View GitHub Profile

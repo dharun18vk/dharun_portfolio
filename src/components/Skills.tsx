@@ -9,7 +9,7 @@ export const Skills = () => {
       icon: Code,
       title: 'Languages & Web',
       skills: [
-        { name: 'JavaScript', level: 90 },
+        { name: 'JavaScript', level: 60 },
         { name: 'Python', level: 85 },
         { name: 'HTML', level: 95 },
         { name: 'CSS', level: 85 },
@@ -20,32 +20,32 @@ export const Skills = () => {
       icon: Palette,
       title: 'Frontend',
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'Redux', level: 85 },
+        { name: 'React', level: 70 },
+        { name: 'Redux', level: 65 },
         { name: 'Material UI', level: 80 },
         { name: 'Tailwind', level: 90 },
-        { name: 'Chart.js', level: 75 },
+        { name: 'Chart.js', level: 60 },
       ],
     },
     {
       icon: Database,
       title: 'Backend & Tools',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express', level: 80 },
-        { name: 'MongoDB', level: 85 },
-        { name: 'Mongoose', level: 80 },
-        { name: 'REST APIs', level: 85 },
+        { name: 'Node.js', level: 75 },
+        { name: 'Express', level: 75 },
+        { name: 'MongoDB', level: 80 },
+        { name: 'Mongoose', level: 70 },
+        { name: 'REST APIs', level: 80 },
       ],
     },
     {
       icon: Brain,
       title: 'AI/ML',
       skills: [
-        { name: 'TensorFlow', level: 80 },
+        { name: 'TensorFlow', level: 75 },
         { name: 'Keras', level: 85 },
         { name: 'OpenCV', level: 75 },
-        { name: 'Deep Learning', level: 80 },
+        { name: 'Deep Learning', level: 70 },
         { name: 'NLP', level: 75 },
       ],
     },
@@ -54,10 +54,10 @@ export const Skills = () => {
       title: 'Deployment & Tools',
       skills: [
         { name: 'Docker', level: 70 },
-        { name: 'Firebase', level: 80 },
-        { name: 'Netlify', level: 85 },
-        { name: 'Vercel', level: 80 },
-        { name: 'Heroku', level: 75 },
+        { name: 'Firebase', level: 60 },
+        { name: 'Netlify', level: 75 },
+        { name: 'Vercel', level: 70 },
+        { name: 'Heroku', level: 60 },
       ],
     },
   ];
@@ -156,37 +156,37 @@ export const Skills = () => {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <Card className="glass-card">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-center">
-                Additional Skills & Interests
-              </h3>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {[
-                  'JWT Authentication',
-                  'Markdown Processing',
-                  'PDF Generation',
-                  'Real-time Features',
-                  'Deep Learning',
-                  'CNN & LSTM',
-                  'Image Processing',
-                  'Git & GitHub',
-                  'Postman',
-                  'Visual Studio Code',
-                  'Problem Solving',
-                  'Team Collaboration',
-                ].map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="text-sm px-3 py-1 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+        <Card className="glass-card">
+          <CardContent className="p-8">
+            <h3 className="text-2xl font-semibold mb-6 text-center">
+              Additional Skills & Interests
+            </h3>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {[
+                'HTML', 'CSS', 'JavaScript', 'React', 'Node.js',
+                'Express.js', 'MongoDB', 'Mongoose',
+                'JWT', 'Socket.IO', 'Firebase', 'Postman',
+                'Tailwind CSS', 'Material UI', 'Vercel',
+                'GitHub', 'Visual Studio Code', 'Netlify',
+                'PDF Generation', 'Real-time Features',
+                'Deep Learning', 'CNN & LSTM', 'Keras',
+                'TensorFlow', 'OpenCV', 'Image Processing',
+                'NLP', 'Pandas', 'REST APIs',
+                'Agile', 'Markdown Processing',
+                'Problem Solving', 'Team Collaboration', 'Teamwork', 'Adaptability'
+              ].map((skill, index) => (
+                <Badge
+                  key={`${skill}-${index}`}
+                  variant="secondary"
+                  className="text-sm px-3 py-1 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors"
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
         </motion.div>
       </div>
     </section>

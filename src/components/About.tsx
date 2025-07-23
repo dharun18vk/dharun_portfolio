@@ -108,7 +108,7 @@ export const About = () => {
               <Card className="glass-card text-center hover-lift">
                 <CardContent className="p-6">
                   <div className="text-3xl font-bold text-primary mb-2">3+</div>
-                  <p className="text-sm text-muted-foreground">Years Experience</p>
+                  <p className="text-sm text-muted-foreground">Programming languages</p>
                 </CardContent>
               </Card>
 
@@ -128,8 +128,8 @@ export const About = () => {
 
               <Card className="glass-card text-center hover-lift">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-2">92%</div>
-                  <p className="text-sm text-muted-foreground">Deep Fake Detection</p>
+                  <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                  <p className="text-sm text-muted-foreground">event participation and mentorships</p>
                 </CardContent>
               </Card>
             </div>

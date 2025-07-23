@@ -168,22 +168,18 @@ export const Achievements = () => {
               <h3 className="text-2xl font-semibold mb-8 text-center">
                 Achievement Statistics
               </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">1</div>
+                  <div className="text-4xl font-bold text-primary mb-2">2</div>
                   <p className="text-sm text-muted-foreground">Competition Won</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">1</div>
-                  <p className="text-sm text-muted-foreground">Research Papers</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">50+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">10+</div>
                   <p className="text-sm text-muted-foreground">Students Mentored</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">92%</div>
-                  <p className="text-sm text-muted-foreground">Detection Accuracy</p>
+                  <div className="text-4xl font-bold text-primary mb-2">10+</div>
+                  <p className="text-sm text-muted-foreground">Projects</p>
                 </div>
               </div>
             </CardContent>

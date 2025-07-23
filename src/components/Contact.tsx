@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, ExternalLink } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -35,7 +36,6 @@ export const Contact = () => {
       });
       return false;
     }
-    
     if (!formData.email.trim()) {
       toast({
         title: "Validation Error",
@@ -44,7 +44,6 @@ export const Contact = () => {
       });
       return false;
     }
-    
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       toast({
         title: "Validation Error",
@@ -53,7 +52,6 @@ export const Contact = () => {
       });
       return false;
     }
-    
     if (!formData.subject.trim()) {
       toast({
         title: "Validation Error",
@@ -62,7 +60,6 @@ export const Contact = () => {
       });
       return false;
     }
-    
     if (!formData.message.trim()) {
       toast({
         title: "Validation Error",
@@ -71,26 +68,32 @@ export const Contact = () => {
       });
       return false;
     }
-    
     return true;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
-    
     try {
-      // Simulate form submission (replace with actual submission logic)
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
+      await emailjs.send(
+        'service_xezxdtm',
+        'template_d4pcbak',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'aTvKK89QAylaqNpnq'
+      );
+
       toast({
         title: "Message Sent!",
         description: "Thank you for your message. I'll get back to you soon!",
       });
-      
+
       setFormData({
         name: '',
         email: '',
@@ -98,6 +101,7 @@ export const Contact = () => {
         message: '',
       });
     } catch (error) {
+      console.error(error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
@@ -136,13 +140,13 @@ export const Contact = () => {
     {
       icon: Github,
       name: 'GitHub',
-      href: 'https://github.com/dharun-kumar',
+      href: 'https://github.com/dharun18vk',
       color: 'hover:text-gray-600 dark:hover:text-gray-300',
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/dharun-kumar-v',
+      href: 'https://linkedin.com/in/dharun-kumar-v-bb402426a',
       color: 'hover:text-blue-600',
     },
     {
@@ -172,7 +176,7 @@ export const Contact = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -183,7 +187,7 @@ export const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
               <div className="space-y-6">
-                {contactInfo.map((info, index) => (
+                {contactInfo.map((info) => (
                   <Card key={info.title} className="glass-card hover-lift">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
@@ -212,7 +216,7 @@ export const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Connect With Me</h3>
               <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
+                {socialLinks.map((social) => (
                   <Button
                     key={social.name}
                     variant="outline"
@@ -226,7 +230,7 @@ export const Contact = () => {
               </div>
             </div>
 
-            {/* Download Resume */}
+            {/* Resume Download */}
             <Card className="glass-card">
               <CardContent className="p-6">
                 <div className="text-center">
@@ -234,13 +238,12 @@ export const Contact = () => {
                   <p className="text-sm text-muted-foreground mb-4">
                     Get a detailed overview of my skills and experience
                   </p>
-                  <Button
-                    className="bg-primary hover:bg-primary/90"
-                    onClick={() => window.open('/resume.pdf', '_blank')}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Download Resume
-                  </Button>
+                  <a href="/resume.pdf" download className="inline-block">
+                    <Button className="bg-primary hover:bg-primary/90 w-full">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Download Resume
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -284,7 +287,7 @@ export const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="subject">Subject *</Label>
                     <Input
@@ -297,7 +300,7 @@ export const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="message">Message *</Label>
                     <Textarea
@@ -311,7 +314,7 @@ export const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <Button
                     type="submit"
                     className="w-full bg-primary hover:bg-primary/90"

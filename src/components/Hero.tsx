@@ -65,7 +65,11 @@ export const Hero = () => {
             <div className="w-full h-full rounded-full bg-gradient-to-tr from-primary to-primary-glow p-1">
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
                 <div className="w-full h-full rounded-full bg-gradient-to-tr from-primary/20 to-primary-glow/20 flex items-center justify-center text-4xl font-bold text-primary">
-                  DK
+                  <img
+                    src="/dharun_photo.jpg"
+                    alt="Dharun Kumar"
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
               </div>
             </div>
@@ -139,7 +143,7 @@ export const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover:bg-accent hover:text-primary transition-all duration-300 hover:-translate-y-1"
-              onClick={() => window.open('https://github.com/dharun-kumar', '_blank')}
+              onClick={() => window.open('https://github.com/dharun18vk', '_blank')}
             >
               <Github className="h-6 w-6" />
             </Button>
@@ -148,7 +152,7 @@ export const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover:bg-accent hover:text-primary transition-all duration-300 hover:-translate-y-1"
-              onClick={() => window.open('https://linkedin.com/in/dharun-kumar-v', '_blank')}
+              onClick={() => window.open('https://linkedin.com/in/dharun-kumar-v-bb402426a', '_blank')}
             >
               <Linkedin className="h-6 w-6" />
             </Button>
@@ -164,20 +168,6 @@ export const Hero = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
-        onClick={scrollToNext}
-      >
-        <div className="flex flex-col items-center space-y-2 text-muted-foreground hover:text-primary transition-colors">
-          <span className="text-sm font-medium">Scroll Down</span>
-          <ChevronDown className="h-6 w-6 animate-bounce" />
-        </div>
-      </motion.div>
     </section>
   );
 };
